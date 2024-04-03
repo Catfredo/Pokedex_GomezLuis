@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+            
+        <div class="pokedex-container">
+            <div class="pokedex__header">
+
+                <div class="pokedex__header-title">
+                    <h1>POKEDEX</h1>
+                </div>
+
+                <div class="pokedex__header-search">
+                    <form id="searchPokemon" action="">
+                        <input id="pokemon" type="text">
+                        <button>
+                            <img src="img/pokeball.png" alt="pokeball">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="pokedex__header-aline">
+                    <div id="arrow-left" class="arrow-left"></div>
+                    <div id="textGen" class="order"> Gen 1 </div>
+                    <div id="arrow-right" class="arrow-right"></div>
+                </div>
+            </div>
+
+            <div id="pokemonContent" class="pokedex__pokemon-content" onclick="exitModal()"></div>
+        </div>
+
+    <!-- SCRIPT DE JAVASCRIPT-->
+    <script src="pokeapi.js" defer></script>
+</body>
+</html>
